@@ -96,10 +96,10 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
-
-/* That's all, stop editing! Happy blogging. */
 /* Multisite */
 define( 'WP_ALLOW_MULTISITE', true );
+/* That's all, stop editing! Happy blogging. */
+
 //Relative URLs for swapping across app service deployment slots 
 define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
